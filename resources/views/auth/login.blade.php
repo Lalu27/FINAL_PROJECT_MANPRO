@@ -123,10 +123,8 @@
                 @endif
 
                 <!-- Form Login -->
-                <form action="{{ url('/login') }}" method="POST" class="flex flex-col gap-md space-y-3">
-                    @csrf
-                    
-                    <!-- Email -->
+                <form action="{{ route('login') }}" method="POST" class="flex flex-col gap-md space-y-3">
+                    @csrf                    
                     <div class="flex flex-col gap-xs">
                         <label class="text-xs font-semibold text-on-surface-variant ml-1" for="email">Email</label>
                         <div class="relative group">
